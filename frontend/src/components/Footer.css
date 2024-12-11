@@ -1,0 +1,20 @@
+/* Footer.css */
+footer {
+    background-color: #1e1e2e; /* Dark background */
+    font-size: 14px; /* Minimalistic small font */
+    font-weight: 400; /* Normal weight */
+    color: #8ab4f8;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+
+footer p {
+  margin: 0;
+}

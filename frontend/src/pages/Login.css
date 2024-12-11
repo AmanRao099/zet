@@ -1,0 +1,141 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Left section */
+.login-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.login-left h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-left p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+
+.divider {
+    color: #999;
+    margin: 20px 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-submit:hover {
+    background-color: #45a049;
+}
+
+/* Right section */
+.login-right {
+    flex: 1;
+    background: linear-gradient(to right, #3a6186, #89253e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-right h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.login-right p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sign-up-btn {
+    background-color: white;
+    color: #3a6186;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sign-up-btn:hover {
+    background-color: #ffffffa3;
+}

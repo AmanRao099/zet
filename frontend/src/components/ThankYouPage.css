@@ -1,0 +1,32 @@
+.thank-you-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .thank-you-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .success-icon {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+  
+  .redirect-text {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .check-mark {
+    font-size: 80px;
+    color: #4CAF50;
+  }
+  

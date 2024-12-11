@@ -1,0 +1,120 @@
+/* src/pages/BookingForm.css */
+
+/* Container for the entire form */
+.booking-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  transform: translateY(10%); /* Added offset for a subtle effect */
+}
+
+/* Form Title */
+.booking-form-container h2 {
+  text-align: center;
+  color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px black, 4px 4px 0px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  background: linear-gradient(to right, #534c4b, #676461); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px 30px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Input fields and labels */
+.booking-form-container label {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+.booking-form-container input,
+.booking-form-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input fields */
+.booking-form-container input[type="text"]:focus,
+.booking-form-container select:focus,
+.booking-form-container input[type="datetime-local"]:focus {
+  outline: none;
+  border-color: #4CAF50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2); /* Green shadow */
+}
+
+/* Submit button styling */
+.booking-form-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.booking-form-container button:hover {
+  background-color: #333;
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Success or Error Message */
+.message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.success-message {
+  color: #28a745;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .booking-form-container {
+    padding: 15px;
+  }
+
+  .booking-form-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .booking-form-container label {
+    font-size: 1.1rem;
+  }
+
+  .booking-form-container input,
+  .booking-form-container select {
+    font-size: 1rem;
+  }
+
+  .booking-form-container button {
+    font-size: 1.1rem;
+  }
+}

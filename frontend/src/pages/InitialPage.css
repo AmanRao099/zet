@@ -1,0 +1,60 @@
+/* src/pages/InitialPage.css */
+.initial-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Overlay container with left and top adjustments */
+.overlay {
+    position: absolute;
+    left: 1%; /* Moves the overlay container towards the left side */
+    top: 25%; /* Keeps it vertically positioned where the h1 is */
+    transform: translateY(-50%); /* Centers vertically */
+    z-index: 10;
+}
+
+/* Style for h1 to bring it to the left and highlight text with black background */
+.overlay h1 {
+    font-size: 5rem;
+    color: transparent; /* Ensure the text color is transparent */
+    text-shadow: 2px 2px 0px black, /* Shadow for 3D effect */
+                 4px 4px 0px rgba(0, 0, 0, 0.5); /* Additional depth */
+    background: linear-gradient(to right, #534c4b, #676461); /* Gradient background */
+    -webkit-background-clip: text; /* Vendor prefix for WebKit (Chrome, Safari) */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* Ensures text gradient is visible in WebKit */
+    padding: 20px 30px; /* Adds padding to highlight the background */
+    margin: 10px 0; /* Margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Makes it block-like */
+}
+
+/* Style for the paragraph */
+.overlay p {
+    font-size: 1.2rem;
+    margin-top: 2px; /* Adds some space from the title */
+    color: white; /* White text for the paragraph */
+    margin-left: 3%; /* Align text to the left for consistency with h1 */
+}
+
+/* Style for the Explore button */
+.explore-button {
+    margin-left: 3%;
+    margin-top: 5px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
+    display: inline-block; /* Keep button inline with other content */
+}
+
+.explore-button:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Slow pop effect on hover */
+}

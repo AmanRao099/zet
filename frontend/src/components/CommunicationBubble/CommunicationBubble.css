@@ -1,0 +1,127 @@
+/* Communication Bubble Icon */
+.communication-bubble {
+  position: fixed;
+  bottom: 20px;  /* Position the bubble above the footer */
+  right: 20px;   /* Place it on the right */
+  background-color: #000;  /* Black background */
+  color: #fff;  /* White text */
+  border-radius: 50%;
+  width: 60px;   /* Size of the bubble */
+  height: 60px;  /* Size of the bubble */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;  /* Ensure it stays above other elements */
+}
+
+.communication-bubble:hover {
+  transform: scale(1.1);  /* Slight grow effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.communication-bubble-icon {
+  color: #fff;  /* White color for the icon */
+}
+
+/* Chatbox Styling */
+.chatbox {
+  position: fixed;
+  bottom: 100px;  /* Adjusted for the space between chat bubble and chatbox */
+  right: 30px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;  /* White background for the chatbox */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Slight shadow for better visibility */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  z-index: 101;  /* Ensure it's above other elements */
+}
+
+/* Header Styling for Chatbox */
+.chatbox-header {
+  background-color: #000;  /* Black header */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close Button */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Messages Container */
+.chatbox-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;  /* Light background for messages */
+}
+
+/* Individual Messages */
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: #000000;  /* Black background for user messages */
+  color: white;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;  /* Light grey for bot messages */
+  color: #000;
+  align-self: flex-start;
+}
+
+/* Input Area */
+.chatbox-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chatbox-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.chatbox-input button {
+  background-color: #000;  /* Black button */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+}
+
+.chatbox-input button:hover {
+  background-color: #333;  /* Darker black on hover */
+}
+
+.chatbox-input input:focus {
+  outline: none;
+}

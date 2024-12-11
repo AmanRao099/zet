@@ -1,0 +1,55 @@
+/* index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+  font-weight: 300; /* Light weight for minimalistic feel */
+  font-size: 16px; /* Base font size */
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  line-height: 1.6; /* Better readability */
+}
+
+/* Default headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Slightly bolder for hierarchy */
+  margin: 10px 0;
+  color: #ffffff; /* Bright white headings for dark theme */
+}
+
+/* Default link styling */
+a {
+  font-weight: 400; /* Normal weight for links */
+  color: #8ab4f8; /* Accent color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #539bf5; /* Brighter hover state */
+  text-decoration: underline;
+}
+
+
+/* Ensure the root div stretches to the full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Main content should take up available space */
+.main-content {
+  flex: 1; /* Grow to fill available space */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

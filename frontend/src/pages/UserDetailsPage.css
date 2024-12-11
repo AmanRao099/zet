@@ -1,0 +1,27 @@
+.user-details-page {
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .submit-btn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

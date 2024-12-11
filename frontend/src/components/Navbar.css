@@ -1,0 +1,128 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5px; /* Reduced padding to shift items a bit left */
+  background-color: transparent !important; /* Ensure the background is transparent */
+  position: fixed; /* Fixed at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's above other content */
+  box-shadow: none; /* Removed shadow */
+  top: 0;
+  align-items: center; /* Vertically align items in the navbar */
+  left: 0; /* Ensure it aligns to the left */
+}
+
+/* Remove outline for navbar links and buttons */
+.navbar *:focus {
+  outline: none; /* Removes outline from any focused element in the navbar */
+}
+
+/* Left Side (Branding) */
+.navbar-left .navbar-brand {
+  font-size: 2.5rem; /* Larger brand name */
+  color: black; /* Black text */
+  text-decoration: none; /* Remove underline */
+  font-weight: 700; /* Bold text */
+  font-family: 'Montserrat', sans-serif; /* Blocky modern font */
+  letter-spacing: 2px; /* Increased letter-spacing for blocky effect */
+  margin-left: 0; /* Remove extra space on the left */
+}
+
+/* Right Side (Navigation Links) */
+.navbar-right {
+  display: flex;
+  align-items: center; /* Center-align items vertically */
+  margin-left: 10px; /* Reduced margin to bring items closer to the left */
+}
+
+.navbar-links {
+  margin-bottom: 5px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 0; /* Remove extra space between brand and links */
+}
+
+.navbar-links li {
+  margin-left: 20px; /* Adjust spacing between links */
+}
+
+.navbar-links a {
+  color: black; /* Black text for the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Consistent size for links */
+  font-weight: 600; /* Slightly bold links */
+  font-family: 'Montserrat', sans-serif; /* Same blocky font */
+  text-transform: uppercase; /* All caps for a sleek, modern feel */
+  letter-spacing: 1px; /* Letter-spacing for added aesthetic */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.navbar-links a:hover {
+  color: #007bff; /* Blue color on hover */
+  transform: scale(1.05); /* Slight scale effect for hover */
+}
+
+/* User Profile */
+.user-profile {
+  margin-left: 30px; /* Spacing between avatar and links */
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circle avatar */
+  object-fit: cover; /* Cover the area of the circle */
+  border: 2px solid black; /* Black border around avatar */
+  transition: transform 0.2s ease; /* Smooth transition */
+}
+
+/* Remove outline on focus for avatar */
+.user-avatar:focus {
+  outline: none;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.user-profile {
+position: relative;
+cursor: pointer;
+}
+
+.profile-menu {
+position: absolute;
+top: 100%;
+right: 0;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 10;
+}
+
+.profile-menu button {
+background-color: #f44336; /* Red color for logout button */
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
+}
+
+.profile-menu button:hover {
+background-color: #d32f2f;
+}
+
+.user-avatar {
+  margin-bottom: 5px;
+  margin-left: -20px;
+  margin-right: 20px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
